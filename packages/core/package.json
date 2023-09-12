@@ -1,0 +1,35 @@
+{
+  "name": "@vjsf-arco-design/core",
+  "version": "0.0.1",
+  "description": "Vue3 JSON Schema Form核心包",
+  "repository": "https://github.com/lljj-x/vue-json-schema-form",
+  "homepage": "https://github.com/lljj-x/vue-json-schema-form",
+  "license": "Apache-2.0",
+  "author": "Liu.Jun",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "main": "./dist/vjsf-arco-design-core.umd.js",
+  "module": "./dist/vjsf-arco-design-core.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "./dist/vjsf-arco-design-core.umd.js",
+      "module": "./dist/vjsf-arco-design-core.mjs",
+      "types": ""
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

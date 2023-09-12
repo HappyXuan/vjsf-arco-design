@@ -1,0 +1,37 @@
+{
+  "name": "@vjsf-arco-design/theme",
+  "version": "0.0.1",
+  "description": "基于Vue3 JSON Schema Form适配Arco Design Vue样式包",
+  "repository": "https://github.com/HappyXuan/vjsf-arco-design",
+  "homepage": "https://github.com/HappyXuan/vjsf-arco-design",
+  "license": "Apache-2.0",
+  "author": "Doraemon Xuan",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "main": "./dist/vjsf-arco-design-theme.umd.js",
+  "module": "./dist/vjsf-arco-design-theme.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "./dist/vjsf-arco-design-theme.umd.js",
+      "module": "./dist/vjsf-arco-design-theme.mjs",
+      "types": ""
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "dependencies": {
+    "@arco-design/web-vue": "^2.51.1",
+    "@vjsf-arco-design/core": "workspace:^0.0.1"
+  }
+}

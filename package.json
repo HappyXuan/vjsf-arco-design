@@ -1,0 +1,17 @@
+{
+  "name": "vjsf-arco-design",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter @vjsf-arco-design/demo... run build"
+  },
+  "dependencies": {
+    "@lljj/vjsf-utils": "1.18.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "less": "^4.2.0",
+    "vite": "^4.4.9"
+  }
+}
