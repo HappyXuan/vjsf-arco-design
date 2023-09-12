@@ -3,13 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "pnpm --filter @vjsf-arco-design/demo... run build"
+    "build": "pnpm -r run build",
+    "changeset": "changeset",
+    "vp": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish --registry=https://registry.npmjs.com/"
   },
   "dependencies": {
     "@lljj/vjsf-utils": "1.18.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@rollup/plugin-commonjs": "^25.0.4",
     "@vitejs/plugin-vue": "^4.3.4",
     "less": "^4.2.0",
