@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import demos from './demos'
-import { reactive, ref, watchEffect } from 'vue'
+import {getCurrentInstance, reactive, ref, watchEffect} from 'vue'
 import './style/baseForm.less'
 import CodeEditor from './components/CodeEditor.vue'
 import VueForm from '@vjsf-arco-design/theme'
+import DivisionDetail from './modal/division/instance.js'
 
+const instance = getCurrentInstance();
 const demoList = ref(demos)
 const selected = ref(0)
 const demo = reactive({
@@ -54,6 +56,15 @@ const vueFormRef = ref()
 const handleValidate = async () => {
   console.log(await vueFormRef.value.$$uiFormRef.validate())
 }
+
+const toEdit = async (div, isDetail = false) => {
+  const editedStudent = await DivisionDetail.toEdit(
+      div,
+      isDetail,
+      instance?.appContext
+  );
+  console.log(editedStudent);
+};
 </script>
 
 <template>
@@ -104,6 +115,7 @@ const handleValidate = async () => {
           ref="vueFormRef"
         />
         <a-button type="primary" @click="handleValidate">校验</a-button>
+        <a-button type="primary" @click="toEdit" style="margin-left: 10px">弹窗</a-button>
       </div>
     </div>
   </div>
