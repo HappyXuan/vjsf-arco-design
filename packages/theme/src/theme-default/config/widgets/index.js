@@ -1,4 +1,4 @@
-import { resolveComponent } from '@lljj/vjsf-utils/vue3Utils'
+import {resolveComponent} from '@lljj/vjsf-utils/vue3Utils'
 import SelectWidget from './SelectWidget'
 import TimePickerWidget from './TimePickerWidget'
 import DatePickerWidget from './DatePickerWidget'
@@ -11,6 +11,7 @@ import InputTagWidget from './InputTagWidget'
 import TextareaWidget from './TextareaWidget'
 import TransferWidget from './TransferWidget'
 import TreeSelectWidget from './TreeSelectWidget'
+import InputPasswordWidget from "./InputPasswordWidget";
 
 const widgetComponents = {
   CheckboxesWidget,
@@ -25,6 +26,7 @@ const widgetComponents = {
   TextareaWidget,
   TransferWidget,
   TreeSelectWidget,
+  InputPasswordWidget,
   SwitchWidget: resolveComponent('a-switch'),
   InputWidget: resolveComponent('a-input'),
   InputNumberWidget: resolveComponent('a-input-number'),

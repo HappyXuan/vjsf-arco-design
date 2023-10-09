@@ -16,6 +16,11 @@ export default {
         'err:required': '必须输入Last Name111',
         'err:minLength': '签名最小长度10个字符串',
       },
+      password: {
+        type: 'string',
+        title: '登录密码',
+        format: 'inputPassword'
+      },
       age: {
         type: 'number',
         title: '年龄',

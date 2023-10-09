@@ -18,6 +18,7 @@ const {
   RadioWidget,
   CheckboxesWidget,
   CascaderWidget,
+  InputPasswordWidget
 } = widgetComponents
 
 export default {
@@ -32,6 +33,7 @@ export default {
     date: DatePickerWidget, // 2018-11-13
     'date-time': DateTimePickerWidget, // 2018-11-13 20:20:39+00:00
     cascader: CascaderWidget,
+    inputPassword: InputPasswordWidget
   },
   common: {
     select: SelectWidget,
