@@ -1,6 +1,6 @@
 {
   "name": "@vjsf-arco-design/theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "基于Vue3 JSON Schema Form适配Arco Design Vue样式包",
   "repository": "https://github.com/HappyXuan/vjsf-arco-design",
   "homepage": "https://github.com/HappyXuan/vjsf-arco-design",
