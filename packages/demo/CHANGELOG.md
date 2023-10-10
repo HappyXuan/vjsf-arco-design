@@ -1,5 +1,12 @@
 # @vjsf-arco-design/demo
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies
+  - @vjsf-arco-design/theme@0.0.3
+
 ## 0.0.3
 
 ### Patch Changes

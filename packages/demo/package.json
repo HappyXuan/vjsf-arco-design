@@ -1,6 +1,6 @@
 {
   "name": "@vjsf-arco-design/demo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "基于Vue3 JSON Schema Form表单搭建的示例工程",
   "repository": "https://github.com/HappyXuan/vjsf-arco-design",
   "homepage": "https://github.com/HappyXuan/vjsf-arco-design",
@@ -33,7 +33,7 @@
   "dependencies": {
     "@arco-design/web-vue": "^2.51.1",
     "@vjsf-arco-design/core": "workspace:^0.0.1",
-    "@vjsf-arco-design/theme": "workspace:^0.0.2",
+    "@vjsf-arco-design/theme": "workspace:^0.0.3",
     "monaco-editor": "^0.43.0"
   }
 }
