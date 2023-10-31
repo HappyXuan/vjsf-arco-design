@@ -1,5 +1,11 @@
 # @vjsf-arco-design/theme
 
+## 0.0.4
+
+### Patch Changes
+
+- 增加对于文件上传组件支持
+
 ## 0.0.3
 
 ### Patch Changes

@@ -2,11 +2,11 @@ import { h } from 'vue'
 import { resolveComponent } from '@lljj/vjsf-utils/vue3Utils'
 
 const baseComponent = {
-  name: 'InputTagWidget',
+  name: 'UploadFileWidget',
   inheritAttrs: false,
   setup(props, { attrs }) {
     return () =>
-      h(resolveComponent('a-input-tag'), {
+      h(resolveComponent('upload-file'), {
         ...attrs,
       })
   },

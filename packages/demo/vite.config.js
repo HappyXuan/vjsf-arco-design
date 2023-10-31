@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import commonjs from '@rollup/plugin-commonjs';
 
 export default defineConfig({
+  mode: 'development',
   build: {
     lib: {
       entry: './src/main.js',
@@ -32,5 +33,18 @@ export default defineConfig({
       `monaco-editor/esm/vs/language/typescript/ts.worker`,
       `monaco-editor/esm/vs/editor/editor.worker`
     ],
+  },
+  // 启动前端代理
+  server: {
+    open: true,
+    fs: {
+      strict: true,
+    },
+    proxy: {
+      '/fileStorage': {
+        target: 'http://10.50.4.62:1175',
+        changeOrigin: true,
+      }
+    },
   }
 })

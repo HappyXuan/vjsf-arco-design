@@ -12,6 +12,7 @@ import TextareaWidget from './TextareaWidget'
 import TransferWidget from './TransferWidget'
 import TreeSelectWidget from './TreeSelectWidget'
 import InputPasswordWidget from "./InputPasswordWidget";
+import UploadFileWidget from "./UploadFileWidget";
 
 const widgetComponents = {
   CheckboxesWidget,
@@ -27,6 +28,7 @@ const widgetComponents = {
   TransferWidget,
   TreeSelectWidget,
   InputPasswordWidget,
+  UploadFileWidget,
   SwitchWidget: resolveComponent('a-switch'),
   InputWidget: resolveComponent('a-input'),
   InputNumberWidget: resolveComponent('a-input-number'),

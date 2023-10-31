@@ -1,10 +1,93 @@
-import { ref } from 'vue'
+import {ref} from 'vue'
 
 export default {
   name: 'Demo',
   schema: {
     type: 'object',
     properties: {
+      uploadFile: {
+        type: 'array',
+        items: {
+          type: 'object',
+          properties: {
+            isFolder: {
+              type: 'boolean'
+            },
+            isRoot: {
+              type: 'boolean',
+            },
+            id: {
+              type: 'number'
+            },
+            fileType: {
+              type: 'string'
+            },
+            size: {
+              type: 'number'
+            },
+            relativePath: {
+              type: 'string'
+            },
+            paused: {
+              type: 'boolean'
+            },
+            error: {
+              type: 'boolean'
+            },
+            allError: {
+              type: 'boolean'
+            },
+            aborted: {
+              type: 'boolean'
+            },
+            completed: {
+              type: 'boolean'
+            },
+            averageSpeed: {
+              type: 'number'
+            },
+            currentSpeed: {
+              type: 'number'
+            },
+            _lastProgressCallback: {
+              type: 'number'
+            },
+            _prevUploadedSize: {
+              type: 'number'
+            },
+            _prevProgress: {
+              type: 'number'
+            },
+            uniqueIdentifier: {
+              type: 'string'
+            },
+            remoteFileUrl: {
+              type: 'string'
+            },
+            _firstResponse: {
+              type: 'boolean'
+            },
+            _progeressId: {
+              type: 'number'
+            }
+          }
+        },
+        title: '上传文件',
+        'ui:widget': 'UploadFileWidget',
+        'ui:options': {
+          'allow-clear': true,
+          'checkFile': (file) => !/.*[\u4e00-\u9fa5]+.*$/.test(file.name),
+          extraParam: {
+            fileBusinessType: "ProductWarehouse"
+          },
+          btnAttrs: {
+            attrs: {
+              // accept: '.zip'
+            }
+          },
+          tip: '只能上传zip文件'
+        },
+      },
       userName: {
         type: 'string',
         title: '用户名',
@@ -225,5 +308,30 @@ export default {
       ],
     },
   },
-  default: ref({}),
+  default: ref({
+    uploadFile: [
+      {
+        "isFolder": false,
+        "isRoot": false,
+        "id": 2,
+        "fileType": "jmx",
+        "name": "A1234567-JB123456-magpie1.jmx",
+        "size": 6,
+        "relativePath": "A1234567-JB123456-magpie1.jmx",
+        "paused": false,
+        "error": false,
+        "allError": false,
+        "aborted": false,
+        "completed": true,
+        "averageSpeed": 0,
+        "currentSpeed": 0,
+        "_lastProgressCallback": 1698645586750,
+        "_prevUploadedSize": 6,
+        "_prevProgress": 1,
+        "uniqueIdentifier": "6-A1234567-JB123456-magpie1jmx",
+        "remoteFileUrl": "/files/ProductWarehouse/6-A1234567-JB123456-magpie1jmx/A1234567-JB123456-magpie1.jmx",
+        "_firstResponse": true,
+        "_progeressId": 125
+      }]
+  }),
 }
